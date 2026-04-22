@@ -58,7 +58,14 @@ cp .env.example .env
 ```
 *Certifique-se de colocar sua chave JSON em `src/keys/` e apontar o caminho corretamente no `.env`.*
 
-### Passo 3: Subir o Ambiente
+### Passo 3: Instalar Dependências (Composer)
+Este projeto utiliza o SDK do Google Cloud. Para instalar a pasta `vendor`, execute o comando abaixo (via Docker):
+```bash
+docker-compose run --rm app composer install
+```
+*Caso prefira, você também pode executar `composer install` localmente dentro da pasta `src/` (requer Composer instalado na máquina).*
+
+### Passo 4: Subir o Ambiente
 ```bash
 docker-compose up -d --build
 ```
