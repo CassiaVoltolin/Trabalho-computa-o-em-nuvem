@@ -1,0 +1,13 @@
+{
+    "name": "fatec/cloud-integration-gcp",
+    "description": "Integration with Google Cloud Storage and MySQL for Cloud Computing course.",
+    "require": {
+        "google/cloud-storage": "^1.33",
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
